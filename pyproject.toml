@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "jupyterlab_docker"
+version = "0.1.0"
+description = "Environment JupyterLab Poetry docker-compose"
+
+authors = ["im"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+jupyterlab = "*"
+numpy = "*"
+pandas = "*"
+sklearn = "*"
+matplotlib = "*"
+seaborn = "*"
+japanize-matplotlib = "*"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.4"
+pytest-watch = "^4.2.0"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
