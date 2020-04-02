@@ -40,3 +40,29 @@ $ docker-compose up -d
 | Mac            |            |
 | Docker         | 19.03.8    |
 | Docker-compose | 1.25.4     |
+| Python         | 3.8        |
+
+## Packaging Libraries
+
+- jupyterlab
+- numpy
+- pandas
+- sklearn
+- matplotlib
+- seaborn
+- japanize-matplotlib
+
+[tool.poetry.dev-dependencies]
+
+- pytest
+- pytest-watch
+
+## Note
+
+- Poetry はパッケージ管理用途としており、仮想環境 venv 作成は回避しています。
+
+  （`poetry config virtualenvs.create false`）
+
+- ライブラリの追加・削除は **`pyproject.toml`** ファイル内 `[tool.poetry.dependencies]` の記述で設定。
+
+  - `docker-compose up -d --build` で再構築＆コンテナ再起動
