@@ -40,7 +40,11 @@ $ docker-compose up -d
 | Mac            |            |
 | Docker         | 19.03.8    |
 | Docker-compose | 1.25.4     |
-| Python         | 3.8        |
+
+```
+$ docker-compose exec eda python --version
+Python 3.8.2
+```
 
 ## Packaging Libraries
 
@@ -59,7 +63,7 @@ $ docker-compose up -d
 
 ## Note
 
-- Poetry はパッケージ管理用途としており、仮想環境 venv 作成は回避しています。
+- Poetry はパッケージ管理用途としており、仮想環境 venv は作成回避しています。
 
   （`poetry config virtualenvs.create false`）
 
