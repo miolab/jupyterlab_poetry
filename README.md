@@ -20,7 +20,7 @@ $ cd jupyterlab_poetry/
 $ docker-compose up -d
 ```
 
-上記まで実行したら、[http://localhost:8888/lab](http://localhost:8888/lab)で確認・JupyterLab 実行。
+上記まで実行したら、[http://localhost:8888/lab](http://localhost:8888/lab)で確認・JupyterLab 実行可能です。
 
 ## tree
 
@@ -70,3 +70,13 @@ Python 3.8.2
 - ライブラリの追加・削除は **`pyproject.toml`** ファイル内 `[tool.poetry.dependencies]` の記述で設定。
 
   - `docker-compose up -d --build` で再構築＆コンテナ再起動
+
+#### 環境削除
+
+コンテナやイメージをまとめて全削除しディレクトリ消去するには、以下コマンドを実行。
+
+```
+$ docker-compose down --rmi all --volumes
+$ cd ../
+$ rm -rf vue_trial/
+```
