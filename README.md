@@ -48,8 +48,8 @@ $ docker-compose up
 |                | バージョン |
 | :------------- | :--------- |
 | Mac            |            |
-| Docker         | 19.03.8    |
-| Docker-compose | 1.25.4     |
+| Docker         | 19.03.12    |
+| Docker-compose | 1.26.2,     |
 
 ```
 $ docker-compose exec eda python --version
