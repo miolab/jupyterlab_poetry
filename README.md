@@ -1,5 +1,7 @@
 # JupyterLab in Poetry (in Docker)
 
+[![miolab](https://circleci.com/gh/miolab/jupyterlab_poetry.svg?style=svg)](https://github.com/miolab/jupyterlab_poetry)
+
 - **`JupyterLab`** の実行環境を、**`Poetry`** を使って`docker-compose`で Docker コンテナに構築
 
   <img width="800" alt="jupyterlab_poetry" src="https://user-images.githubusercontent.com/33124627/78244333-55f8e680-7520-11ea-924a-5195a74fc7ed.png">
