@@ -2,7 +2,8 @@
 
 [![miolab](https://circleci.com/gh/miolab/jupyterlab_poetry.svg?style=svg)](https://github.com/miolab/jupyterlab_poetry)
 
-- **`JupyterLab`** の実行環境を、**`Poetry`** を使って`docker-compose`で Docker コンテナに構築
+- **`JupyterLab`** の実行環境を、**`Poetry`** を使って `Docker` コンテナで構築しています  
+  （CircleCI による CIパイプライン構築済み）
 
   <img width="800" alt="jupyterlab_poetry" src="https://user-images.githubusercontent.com/33124627/78244333-55f8e680-7520-11ea-924a-5195a74fc7ed.png">
 
@@ -49,7 +50,7 @@ $ docker-compose up
 | :------------- | :--------- |
 | Mac            |            |
 | Docker         | 19.03.12    |
-| Docker-compose | 1.26.2,     |
+| Docker-compose | 1.26.2     |
 
 ```
 $ docker-compose exec eda python --version
