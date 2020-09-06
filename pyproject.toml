@@ -6,7 +6,7 @@ description = "Environment JupyterLab Poetry docker-compose"
 authors = ["im"]
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.8.5"
 
 jupyterlab = "*"
 numpy = "*"
