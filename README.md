@@ -29,7 +29,7 @@ $ docker-compose up
     .
 ```
 
-上記まで実行したら、[http://localhost:8888/lab](http://localhost:8888/lab)で確認・JupyterLab 実行可能です。
+上記まで実行したら、[http://localhost:8888/lab](http://localhost:8888/lab)で確認・JupyterLab 実行可能です
 
 ---
 
@@ -95,14 +95,14 @@ Poetry version 1.0.10
 
 ### 環境削除
 
-コンテナやイメージをまとめて全削除しディレクトリ消去するには、以下コマンドを実行。
+コンテナやイメージをまとめて全削除しディレクトリ消去するには、以下コマンドを実行してください
 
 ```
 $ docker-compose down --rmi all --volumes
 
 $ cd ../
 
-$ rm -rf vue_trial/
+$ rm -rf jupyterlab_poetry
 ```
 
 ---
