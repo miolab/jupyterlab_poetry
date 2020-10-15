@@ -3,7 +3,7 @@
 [![miolab](https://circleci.com/gh/miolab/jupyterlab_poetry.svg?style=svg)](https://github.com/miolab/jupyterlab_poetry)
 
 - **`JupyterLab`** の実行環境を、**`Poetry`** を使って `Docker` コンテナで構築しています  
-  （CircleCI による CIパイプライン構築済み）
+  （CircleCI による CI パイプライン構築済み）
 
   <img width="800" alt="jupyterlab_poetry" src="https://user-images.githubusercontent.com/33124627/78244333-55f8e680-7520-11ea-924a-5195a74fc7ed.png">
 
@@ -29,7 +29,7 @@ $ docker-compose up
     .
 ```
 
-上記まで実行したら、[http://localhost:8888/lab](http://localhost:8888/lab)で確認・JupyterLab 実行可能です
+上記まで実行したら、**[http://localhost:8888/lab](http://localhost:8888/lab)** で JupyterLab 実行可能です
 
 ---
 
@@ -46,19 +46,29 @@ $ docker-compose up
 
 ## Environment
 
-|                | バージョン |
-| :------------- | :--------- |
-| Mac            |            |
-| Docker         | 19.03.12    |
-| Docker-compose | 1.26.2     |
+- 検証環境
 
-```
-$ docker-compose exec eda python --version
-Python 3.8.5
+  |                | バージョン |
+  | :------------- | :--------- |
+  | Mac            |            |
+  | Docker         | 19.03.13   |
+  | Docker-compose | 1.27.4     |
 
-$ docker-compose exec eda poetry --version
-Poetry version 1.0.10
-```
+- Python & Poetry バージョン
+
+  ```
+  $ docker-compose exec eda python --version
+  Python 3.8.5
+
+  $ docker-compose exec eda poetry --version
+  Poetry version 1.0.10
+  ```
+
+- ライブラリ
+
+  - 基本的に最新版を fetch してきます
+
+  - 詳細は `pyproject.toml` 参照
 
 ## Packaging Libraries
 
@@ -109,8 +119,16 @@ $ rm -rf jupyterlab_poetry
 
 ### 参考
 
-- [Poetry](https://python-poetry.org/)
+- Poetry
 
-- [PyPI](https://pypi.org/project/poetry/)
+  - [公式](https://python-poetry.org/)
 
-- [Docker Official Images / Python](https://hub.docker.com/_/python)
+    - [The pyproject.toml file](https://python-poetry.org/docs/pyproject/)
+
+  - [PyPI](https://pypi.org/project/poetry/)
+
+  - [GitHub](https://github.com/python-poetry/poetry)
+
+- Docker
+
+  [Docker Official Images / Python](https://hub.docker.com/_/python)
