@@ -109,8 +109,16 @@ $ rm -rf jupyterlab_poetry
 
 ### 参考
 
-- [Poetry](https://python-poetry.org/)
+- Poetry
 
-- [PyPI](https://pypi.org/project/poetry/)
+  - [公式](https://python-poetry.org/)
 
-- [Docker Official Images / Python](https://hub.docker.com/_/python)
+    - [The pyproject.toml file](https://python-poetry.org/docs/pyproject/)
+
+  - [PyPI](https://pypi.org/project/poetry/)
+
+  - [GitHub](https://github.com/python-poetry/poetry)
+
+- Docker
+
+  [Docker Official Images / Python](https://hub.docker.com/_/python)
