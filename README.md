@@ -46,19 +46,29 @@ $ docker-compose up
 
 ## Environment
 
-|                | バージョン |
-| :------------- | :--------- |
-| Mac            |            |
-| Docker         | 19.03.13   |
-| Docker-compose | 1.27.4     |
+- 検証環境
 
-```
-$ docker-compose exec eda python --version
-Python 3.8.5
+  |                | バージョン |
+  | :------------- | :--------- |
+  | Mac            |            |
+  | Docker         | 19.03.13   |
+  | Docker-compose | 1.27.4     |
 
-$ docker-compose exec eda poetry --version
-Poetry version 1.0.10
-```
+- Python & Poetry バージョン
+
+  ```
+  $ docker-compose exec eda python --version
+  Python 3.8.5
+
+  $ docker-compose exec eda poetry --version
+  Poetry version 1.0.10
+  ```
+
+- ライブラリ
+
+  - 基本的に最新版を fetch してきます
+
+  - 詳細は `pyproject.toml` 参照
 
 ## Packaging Libraries
 
