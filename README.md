@@ -9,7 +9,7 @@
 
 ---
 
-## 使い方
+## :star: 使い方
 
 ```
 $ git clone https://github.com/miolab/jupyterlab_poetry.git
@@ -33,7 +33,7 @@ $ docker-compose up
 
 ---
 
-## tree
+## :star: tree
 
 ```
 .
@@ -44,7 +44,7 @@ $ docker-compose up
 └── sample_jupyter.ipynb
 ```
 
-## Environment
+## :star: Environment
 
 - 検証環境
 
@@ -66,11 +66,11 @@ $ docker-compose up
 
 - ライブラリ
 
-  - 基本的に最新版を fetch してきます
+  - 基本的には最新版を fetch してきます
 
   - 詳細は `pyproject.toml` 参照
 
-## Packaging Libraries
+## :star: Packaging Libraries
 
 - jupyterlab
 - numpy
@@ -85,13 +85,11 @@ $ docker-compose up
 - pytest
 - pytest-watch
 
-## Note
+## :star: Note
 
-- Poetry はパッケージ管理用途としており、仮想環境 venv は作成回避しています。
+- **JupyterLab 実行の際に、必要となるライブラリは 直接 `import` してください**
 
-  （`poetry config virtualenvs.create false`）
-
-- ライブラリの追加・削除は **`pyproject.toml`** ファイル内 `[tool.poetry.dependencies]` の記述で設定。
+- ライブラリの追加・削除は **`pyproject.toml`** ファイル内 `[tool.poetry.dependencies]` の記述で設定可能です
 
   - 再構築＆コンテナ再起動
 
@@ -101,9 +99,13 @@ $ docker-compose up
     $ docker-compose up
     ```
 
+- Poetry はパッケージ管理用途としており、仮想環境 venv は作成回避しています
+
+  （`poetry config virtualenvs.create false`）
+
 ---
 
-### 環境削除
+### :moon: 環境削除
 
 コンテナやイメージをまとめて全削除しディレクトリ消去するには、以下コマンドを実行してください
 
@@ -117,7 +119,7 @@ $ rm -rf jupyterlab_poetry
 
 ---
 
-### 参考
+### :moon: 参考
 
 - Poetry
 
