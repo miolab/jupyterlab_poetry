@@ -58,10 +58,10 @@ $ docker-compose up
 
   ```
   $ docker-compose exec eda python --version
-  Python 3.8.5
+  Python 3.8.6
 
   $ docker-compose exec eda poetry --version
-  Poetry version 1.0.10
+  Poetry version 1.1.3
   ```
 
 - ライブラリ
