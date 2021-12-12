@@ -7,5 +7,10 @@ services:
       - ./:/app
     working_dir: /app
     ports:
-      - "8888:8888"
-    command: jupyter lab --ip=0.0.0.0 --allow-root --NotebookApp.token='' --port=8888
+      - "8890:8890"
+    command:
+      jupyter lab
+        --ip=0.0.0.0
+        --allow-root
+        --NotebookApp.token=''
+        --port=8890
