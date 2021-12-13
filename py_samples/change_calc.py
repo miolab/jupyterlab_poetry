@@ -10,6 +10,11 @@ def main():
 
     change = calc_diff(input_amount, price)
 
+    for i in arr_coin():
+        num = change // i
+        change %= i
+        print(str(i) + '円: ' + str(num) + ' 枚')
+
 
 def print_amount(yen):
     if not yen.isdecimal():
@@ -27,6 +32,21 @@ def calc_diff(input_amount, price):
         sys.exit()
     else:
         print('お釣り: ' + str(change) + '円')
+        return change
+
+
+def arr_coin():
+    return [
+        10000,
+        5000,
+        1000,
+        500,
+        100,
+        50,
+        10,
+        5,
+        1
+    ]
 
 
 if __name__ == "__main__":
