@@ -8,7 +8,7 @@ def main():
     input_amount = input('投入する金額(円): ')
     print_amount(input_amount)
 
-    calc_change(input_amount, price)
+    change = calc_diff(input_amount, price)
 
 
 def print_amount(yen):
@@ -19,7 +19,7 @@ def print_amount(yen):
         print(str(yen) + '円')
 
 
-def calc_change(input_amount, price):
+def calc_diff(input_amount, price):
     change = int(input_amount) - int(price)
 
     if change < 0:
