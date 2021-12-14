@@ -11,7 +11,7 @@ def main():
 
 def reverse_text(text):
     if len(text) < 2:
-        print('無効な値です。2文字以上で入力してください。')
+        print('2文字以上で入力してください。')
         sys.exit()
     return ''.join(reversed(text))
 
