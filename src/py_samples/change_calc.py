@@ -2,40 +2,45 @@ import sys
 
 
 def main():
-    price = input('商品価格(円): ')
-    print_amount(price)
+    price: str = input('商品価格(円): ')
+    display_input_amount(price)
 
-    input_amount = input('投入する金額(円): ')
-    print_amount(input_amount)
+    input_amount: str = input('投入する金額(円): ')
+    display_input_amount(input_amount)
 
-    change = calc_diff(input_amount, price)
+    change: int = calc_diff(input_amount, price)
 
     for i in arr_coin():
         num = change // i
         change %= i
-        print(str(i) + '円: ' + str(num) + ' 枚')
+        print(
+            str(i) + '円: ' + str(num) + ' 枚'
+        )
 
 
-def print_amount(yen):
+def display_input_amount(yen: str) -> str:
     if not yen.isdecimal():
-        print(str(yen) + ' は金額として無効です。整数を入力してください。')
+        print(yen + ' は金額として無効です。整数を入力してください。')
         sys.exit()
-    else:
-        print(str(yen) + '円')
+    print(yen + '円')
 
 
-def calc_diff(input_amount, price):
-    change = int(input_amount) - int(price)
+def calc_diff(input_amount: str, price: str) -> int:
+    change: int = int(input_amount) - int(price)
 
     if change < 0:
-        print(str(abs(change)) + ' 円不足しています。')
+        print(
+            str(abs(change)) + ' 円不足しています。'
+        )
         sys.exit()
     else:
-        print('お釣り: ' + str(change) + '円')
+        print(
+            'お釣り: ' + str(change) + '円'
+        )
         return change
 
 
-def arr_coin():
+def arr_coin() -> list:
     return [
         10000,
         5000,
