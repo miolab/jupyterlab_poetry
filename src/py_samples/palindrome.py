@@ -16,7 +16,7 @@ def reverse_text(text):
     return ''.join(reversed(text))
 
 
-def display_palindrome_or_not(text):
+def display_palindrome_or_not(text: str) -> str:
     reversed_text = reverse_text(text)
 
     if text == reversed_text:
