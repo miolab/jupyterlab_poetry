@@ -1,6 +1,8 @@
 FROM python:3.8.6-slim
 
 ENV PYTHONUNBUFFERED=1
+ENV PYTHONPATH=./
+
 WORKDIR /app
 
 COPY pyproject.toml ./
