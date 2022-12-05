@@ -1,20 +1,17 @@
 version: 2.1
+
+executors:
+  machine-executor:
+    machine:
+      image: ubuntu-2004:202107-02
+
 jobs:
   build:
-    docker:
-      - image: buildpack-deps:trusty
+    executor:
+      name: machine-executor
 
     steps:
       - checkout
-
-      - run:
-          name: Install docker-compose
-          command: |
-            set -x
-            curl -L https://github.com/docker/compose/releases/download/1.26.2/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
-            chmod +x /usr/local/bin/docker-compose
-
-      - setup_remote_docker
 
       - run:
           name: Build Docker
@@ -22,8 +19,7 @@ jobs:
 
       - run:
           name: Docker-compose up
-          command:
-            docker-compose up -d
+          command: docker-compose up -d
 
       - run:
           name: Finish message
