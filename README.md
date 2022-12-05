@@ -1,15 +1,15 @@
-# JupyterLab in Poetry (in Docker)
+# JupyterLab in Poetry with Docker
 
 [![miolab](https://circleci.com/gh/miolab/jupyterlab_poetry.svg?style=svg)](https://github.com/miolab/jupyterlab_poetry)
 
-- **`JupyterLab`** の実行環境を、**`Poetry`** を使って `Docker` コンテナで構築しています  
-  （CircleCI による CI パイプライン構築済み）
+**JupyterLab** runtime environment managed by **Poetry** with **Docker**.
 
-  <img width="800" alt="jupyterlab_poetry" src="https://user-images.githubusercontent.com/33124627/78244333-55f8e680-7520-11ea-924a-5195a74fc7ed.png">
+<img width="800" alt="jupyterlab_poetry" src="https://user-images.githubusercontent.com/33124627/78244333-55f8e680-7520-11e
+a-924a-5195a74fc7ed.png">
 
 ---
 
-## :star: 使い方
+## :star: Installation
 
 ```
 $ git clone https://github.com/miolab/jupyterlab_poetry.git
@@ -29,32 +29,11 @@ $ docker-compose up
     .
 ```
 
-上記まで実行したら、**[http://localhost:8888/lab](http://localhost:8888/lab)** で JupyterLab 実行可能です
+After done the above, we can run JupyterLab at http://localhost:8888/lab .
 
----
+### Versions
 
-## :star: tree
-
-```
-.
-├── Dockerfile
-├── README.md
-├── docker-compose.yml
-├── pyproject.toml
-└── sample_jupyter.ipynb
-```
-
-## :star: Environment
-
-- 検証環境
-
-  |                | バージョン |
-  | :------------- | :--------- |
-  | Mac            |            |
-  | Docker         | 19.03.13   |
-  | Docker-compose | 1.27.4     |
-
-- Python & Poetry バージョン
+- Python & Poetry
 
   ```
   $ docker-compose exec eda python --version
@@ -64,34 +43,31 @@ $ docker-compose up
   Poetry version 1.1.3
   ```
 
-- ライブラリ
+- Packaging libraries
 
-  - 基本的には最新版を fetch してきます
+  We fetch the latest version.  
+  See **pyproject.toml** for details.
 
-  - 詳細は `pyproject.toml` 参照
+  - jupyterlab
+  - numpy
+  - pandas
+  - sklearn
+  - matplotlib
+  - seaborn
+  - japanize-matplotlib
 
-## :star: Packaging Libraries
+  [tool.poetry.dev-dependencies]
 
-- jupyterlab
-- numpy
-- pandas
-- sklearn
-- matplotlib
-- seaborn
-- japanize-matplotlib
-
-[tool.poetry.dev-dependencies]
-
-- pytest
-- pytest-watch
+  - pytest
+  - pytest-watch
 
 ## :star: Note
 
-- **JupyterLab 実行の際に、必要となるライブラリは 直接 `import` してください**
+- When running JupyterLab, import the necessary libraries directly on the GUI.
 
-- ライブラリの追加・削除は **`pyproject.toml`** ファイル内 `[tool.poetry.dependencies]` の記述で設定可能です
+- The basic construction of adding and removing libraries can be configured on `[tool.poetry.dependencies]` in **pyproject.toml** file.
 
-  - 再構築＆コンテナ再起動
+  - Reconstruct and Restart containers
 
     ```
     $ docker-compose build
@@ -99,15 +75,15 @@ $ docker-compose up
     $ docker-compose up
     ```
 
-- Poetry はパッケージ管理用途としており、仮想環境 venv は作成回避しています
+- Poetry is used for package management purposes, and the virtual environment `venv` is avoided.
 
-  （`poetry config virtualenvs.create false`）
+  `poetry config virtualenvs.create false`
 
 ---
 
-### :moon: 環境削除
+### :moon: Uninstallation
 
-コンテナやイメージをまとめて全削除しディレクトリ消去するには、以下コマンドを実行してください
+To delete environment at once and erase directories, execute the following command.
 
 ```
 $ docker-compose down --rmi all --volumes
@@ -119,11 +95,11 @@ $ rm -rf jupyterlab_poetry
 
 ---
 
-### :moon: 参考
+### :moon: Ref
 
 - Poetry
 
-  - [公式](https://python-poetry.org/)
+  - [Official](https://python-poetry.org/)
 
     - [The pyproject.toml file](https://python-poetry.org/docs/pyproject/)
 
