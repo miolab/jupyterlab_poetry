@@ -15,11 +15,11 @@ jobs:
 
       - run:
           name: Build Docker
-          command: docker-compose build
+          command: docker compose build
 
       - run:
-          name: Docker-compose up
-          command: docker-compose up -d
+          name: Docker Compose up
+          command: docker compose up -d
 
       - run:
           name: Finish message
