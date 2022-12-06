@@ -4,8 +4,7 @@
 
 **JupyterLab** runtime environment managed by **Poetry** with **Docker**.
 
-<img width="800" alt="jupyterlab_poetry" src="https://user-images.githubusercontent.com/33124627/78244333-55f8e680-7520-11e
-a-924a-5195a74fc7ed.png">
+<img width="800" alt="jupyterlab_poetry_sample_image" src="https://user-images.githubusercontent.com/33124627/78244333-55f8e680-7520-11ea-924a-5195a74fc7ed.png">
 
 ---
 
@@ -20,27 +19,27 @@ $ cd jupyterlab_poetry
 ```
 
 ```
-$ docker-compose build
+$ docker compose build
     .
     .
 
-$ docker-compose up
+$ docker compose up
     .
     .
 ```
 
-After done the above, we can run JupyterLab at http://localhost:8888/lab .
+After done the above, we can run JupyterLab at http://localhost:8890/lab .
 
 ### Versions
 
 - Python & Poetry
 
   ```
-  $ docker-compose exec eda python --version
-  Python 3.8.6
+  ➜ docker compose exec eda python --version
+  Python 3.11.0
 
-  $ docker-compose exec eda poetry --version
-  Poetry version 1.1.3
+  ➜ docker compose exec eda poetry --version
+  Poetry (version 1.2.2)
   ```
 
 - Packaging libraries
@@ -70,9 +69,9 @@ After done the above, we can run JupyterLab at http://localhost:8888/lab .
   - Reconstruct and Restart containers
 
     ```
-    $ docker-compose build
+    $ docker compose build
 
-    $ docker-compose up
+    $ docker compose up
     ```
 
 - Poetry is used for package management purposes, and the virtual environment `venv` is avoided.
@@ -86,7 +85,7 @@ After done the above, we can run JupyterLab at http://localhost:8888/lab .
 To delete environment at once and erase directories, execute the following command.
 
 ```
-$ docker-compose down --rmi all --volumes
+$ docker compose down --rmi all --volumes
 
 $ cd ../
 
