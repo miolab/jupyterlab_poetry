@@ -4,7 +4,8 @@
 
 **JupyterLab** runtime environment managed by **Poetry** with **Docker**.
 
-<img width="800" alt="jupyterlab_poetry_sample_image" src="https://user-images.githubusercontent.com/33124627/78244333-55f8e680-7520-11ea-924a-5195a74fc7ed.png">
+<img width="800" alt="jupyterlab_poetry_sample_image" src="img/sample_img_0.png">
+<img width="800" alt="jupyterlab_poetry_sample_image" src="img/sample_img_1.png">
 
 ---
 
