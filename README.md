@@ -5,6 +5,7 @@
 **JupyterLab** runtime environment managed by **Poetry** with **Docker**.
 
 <img width="800" alt="jupyterlab_poetry_sample_image" src="img/sample_img_0.png">
+
 <img width="800" alt="jupyterlab_poetry_sample_image" src="img/sample_img_1.png">
 
 ---
@@ -31,7 +32,7 @@ $ docker compose up
 
 After done the above, we can run JupyterLab at http://localhost:8890/lab .
 
-### Versions
+### Information
 
 - Python & Poetry
 
@@ -45,7 +46,6 @@ After done the above, we can run JupyterLab at http://localhost:8890/lab .
 
 - Packaging libraries
 
-  We fetch the latest version.  
   See **pyproject.toml** for details.
 
   - jupyterlab

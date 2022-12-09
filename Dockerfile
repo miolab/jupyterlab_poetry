@@ -5,7 +5,9 @@ ENV PYTHONPATH=./
 
 WORKDIR /app
 
+WORKDIR /app
 COPY pyproject.toml ./
+COPY poetry.lock ./
 
 RUN pip install --upgrade pip
 RUN pip install poetry
