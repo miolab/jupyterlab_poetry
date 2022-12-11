@@ -1,21 +1,21 @@
 [tool.poetry]
 name = "jupyterlab_docker"
-version = "0.1.0"
+version = "0.2.0"
 description = "Environment JupyterLab Poetry docker-compose"
 
-authors = ["im"]
+authors = ["imaima"]
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.11"
 
-jupyterlab = "*"
-numpy = "*"
-pandas = "*"
-sklearn = "*"
-matplotlib = "*"
-seaborn = "*"
-japanize-matplotlib = "*"
-sympy = "*"
+jupyterlab = "^3.5"
+numpy = "^1.23"
+pandas = "^1.5"
+scikit-learn = "^1.2"
+matplotlib = "^3.6"
+seaborn = "^0.12"
+japanize-matplotlib = "^1.1"
+sympy = "^1.11"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.4"
