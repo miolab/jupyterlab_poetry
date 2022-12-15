@@ -61,7 +61,11 @@ After done the above, we can run JupyterLab at http://localhost:8890/lab .
   - pytest
   - pytest-watch
 
-## :star: Note
+## :star: Add more packages
+
+- An example procedure is described here.
+
+  - https://github.com/miolab/jupyterlab_poetry/issues/22
 
 - When running JupyterLab, import the necessary libraries directly on the GUI.
 
@@ -75,11 +79,13 @@ After done the above, we can run JupyterLab at http://localhost:8890/lab .
     $ docker compose up
     ```
 
+## :star: Other information
+
+### Note
+
 - Poetry is used for package management purposes, and the virtual environment `venv` is avoided.
 
   `poetry config virtualenvs.create false`
-
----
 
 ### :moon: Uninstallation
 
