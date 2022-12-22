@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "jupyterlab_docker"
-version = "0.2.0"
+version = "0.2.1"
 description = "Environment JupyterLab Poetry docker-compose"
 
 authors = ["imaima"]
@@ -16,6 +16,7 @@ matplotlib = "^3.6"
 seaborn = "^0.12"
 japanize-matplotlib = "^1.1"
 sympy = "^1.11"
+scipy = "^1.9"
 pandas-datareader = "~0.10"
 
 [tool.poetry.dev-dependencies]
