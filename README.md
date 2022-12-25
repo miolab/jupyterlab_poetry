@@ -48,36 +48,43 @@ After done the above, we can run JupyterLab at http://localhost:8890/lab .
 
   See **pyproject.toml** for details.
 
-  - jupyterlab
-  - numpy
-  - pandas
-  - sklearn
-  - matplotlib
-  - seaborn
-  - japanize-matplotlib
-
-  [tool.poetry.dev-dependencies]
-
-  - pytest
-  - pytest-watch
-
 ## :star: Add more packages
+
+### add package
+
+```
+➜  docker compose run eda poetry add pyclustering
+```
+
+- When also specifying a version:
+
+  ```
+  docker compose run eda poetry add pyclustering@^0.10
+  ```
+
+### confirm dependencies before update
+
+```
+➜  docker compose run eda poetry update --dry-run
+```
+
+### Update packages
+
+```
+➜  docker compose run eda poetry update
+```
 
 - An example procedure is described here.
 
   - https://github.com/miolab/jupyterlab_poetry/issues/22
 
-- When running JupyterLab, import the necessary libraries directly on the GUI.
+And, need to reconstruct and Restart containers.
 
-- The basic construction of adding and removing libraries can be configured on `[tool.poetry.dependencies]` in **pyproject.toml** file.
+```
+➜  docker compose build
 
-  - Reconstruct and Restart containers
-
-    ```
-    $ docker compose build
-
-    $ docker compose up
-    ```
+➜  docker compose up
+```
 
 ## :star: Other information
 
