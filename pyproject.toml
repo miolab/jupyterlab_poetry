@@ -6,7 +6,7 @@ description = "Environment JupyterLab Poetry docker-compose"
 authors = ["imaima"]
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.10"
 
 jupyterlab = "^3.5"
 pandas = "^1.5"
@@ -19,6 +19,7 @@ sympy = "^1.11"
 scipy = "^1.9"
 pandas-datareader = "~0.10"
 numpy = "^1.24.1"
+xgboost = "^1.7.3"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.4"
