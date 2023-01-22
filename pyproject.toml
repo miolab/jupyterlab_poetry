@@ -20,6 +20,7 @@ scipy = "^1.9"
 pandas-datareader = "~0.10"
 numpy = "^1.24.1"
 xgboost = "^1.7.3"
+mlxtend = "^0.21.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.4"
