@@ -41,7 +41,7 @@ After done the above, we can run JupyterLab at http://localhost:8890/lab .
   Python 3.11.0
 
   ➜ docker compose exec eda poetry --version
-  Poetry (version 1.2.2)
+  Poetry (version 1.3.2)
   ```
 
 - Packaging libraries
