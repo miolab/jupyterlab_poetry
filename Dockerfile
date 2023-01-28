@@ -1,4 +1,4 @@
-FROM python:3.11.0-slim
+FROM python:3.8.16-slim
 
 ENV PYTHONUNBUFFERED=1
 ENV PYTHONPATH=./
