@@ -6,17 +6,17 @@ description = "Environment JupyterLab Poetry docker-compose"
 authors = ["imaima"]
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = ">=3.8, <3.11"
 
 jupyterlab = "^3.5"
 pandas = "^1.5"
-scikit-learn = "^1.2"
+scikit-learn = ">=1.1.3"
 pyclustering = "^0.10"
 matplotlib = "^3.6"
 seaborn = "^0.12"
 japanize-matplotlib = "^1.1"
 sympy = "^1.11"
-scipy = "^1.9"
+scipy = ">=1.8"
 pandas-datareader = "~0.10"
 numpy = "~1.23.0"
 xgboost = "^1.7.3"
