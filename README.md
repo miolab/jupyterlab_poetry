@@ -2,7 +2,7 @@
 
 [![miolab](https://circleci.com/gh/miolab/jupyterlab_poetry.svg?style=svg)](https://github.com/miolab/jupyterlab_poetry)
 
-**JupyterLab** runtime environment managed by **Poetry** with **Docker**.
+**JupyterLab** runtime environment with **Poetry** and **Docker** management.
 
 <img width="800" alt="jupyterlab_poetry_sample_image" src="img/sample_img_0.png">
 
@@ -11,6 +11,8 @@
 ---
 
 ## :star: Installation
+
+__This repo is intended to work in a Mac__ environment. (M1, Intel)
 
 ```
 $ git clone https://github.com/miolab/jupyterlab_poetry.git
@@ -37,10 +39,10 @@ After done the above, we can run JupyterLab at http://localhost:8890/lab .
 - Python & Poetry
 
   ```
-  ➜ docker compose exec eda python --version
+  ➜ docker compose run eda python --version
   Python 3.8.16
 
-  ➜ docker compose exec eda poetry --version
+  ➜ docker compose run eda poetry --version
   Poetry (version 1.3.2)
   ```
 
