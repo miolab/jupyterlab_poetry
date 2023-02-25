@@ -30,6 +30,7 @@ pystan = "^3.10.0"
 # - Due to `RuntimeError: Error during optimization`.
 prophet = "^1.1.5"
 kaggle = "^1.5.13"
+openpyxl = "^3.1.1"
 ydata-profiling = "^4.10.0"
 ipywidgets = "^8.0.5"
 lightgbm = "^3.3.5"

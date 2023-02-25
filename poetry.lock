@@ -997,9 +997,28 @@ files = [
 ]
 
 [[package]]
+<<<<<<< HEAD
 name = "exceptiongroup"
 version = "1.2.2"
 description = "Backport of PEP 654 (exception groups)"
+=======
+name = "et-xmlfile"
+version = "1.1.0"
+description = "An implementation of lxml.xmlfile for the standard library"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+files = [
+    {file = "et_xmlfile-1.1.0-py3-none-any.whl", hash = "sha256:a2ba85d1d6a74ef63837eed693bcb89c3f752169b0e3e7ae5b16ca5e1b3deada"},
+    {file = "et_xmlfile-1.1.0.tar.gz", hash = "sha256:8eb9e2bc2f8c97e37a2dc85a09ecdcdec9d8a396530a6d5a33b30b9a92da0c5c"},
+]
+
+[[package]]
+name = "executing"
+version = "1.2.0"
+description = "Get the currently executing AST node of a frame, and other information"
+category = "main"
+>>>>>>> decfa65 (env/ poetry add openpyxl)
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -1026,13 +1045,22 @@ tests = ["asttokens (>=2.1.0)", "coverage", "coverage-enable-subprocess", "ipyth
 
 [[package]]
 name = "fastjsonschema"
+<<<<<<< HEAD
 version = "2.20.0"
+=======
+version = "2.16.3"
+>>>>>>> decfa65 (env/ poetry add openpyxl)
 description = "Fastest Python implementation of JSON schema"
 optional = false
 python-versions = "*"
 files = [
+<<<<<<< HEAD
     {file = "fastjsonschema-2.20.0-py3-none-any.whl", hash = "sha256:5875f0b0fa7a0043a91e93a9b8f793bcbbba9691e7fd83dca95c28ba26d21f0a"},
     {file = "fastjsonschema-2.20.0.tar.gz", hash = "sha256:3d48fc5300ee96f5d116f10fe6f28d938e6008f59a6a025c2649475b87f76a23"},
+=======
+    {file = "fastjsonschema-2.16.3-py3-none-any.whl", hash = "sha256:04fbecc94300436f628517b05741b7ea009506ce8f946d40996567c669318490"},
+    {file = "fastjsonschema-2.16.3.tar.gz", hash = "sha256:4a30d6315a68c253cfa8f963b9697246315aa3db89f98b97235e345dedfb0b8e"},
+>>>>>>> decfa65 (env/ poetry add openpyxl)
 ]
 
 [package.extras]
@@ -1268,13 +1296,22 @@ files = [
 
 [[package]]
 name = "holidays"
+<<<<<<< HEAD
 version = "0.56"
+=======
+version = "0.20"
+>>>>>>> decfa65 (env/ poetry add openpyxl)
 description = "Generate and work with holidays in Python"
 optional = false
 python-versions = ">=3.8"
 files = [
+<<<<<<< HEAD
     {file = "holidays-0.56-py3-none-any.whl", hash = "sha256:19b6410c3ae899ad5746917f106c5f07c899eba3afa3f4ca82981d3ed677f4c4"},
     {file = "holidays-0.56.tar.gz", hash = "sha256:86e8550724d34f72b4db2292b2a70983067b2ee80eeaf18a30ea882d821814c5"},
+=======
+    {file = "holidays-0.20-py3-none-any.whl", hash = "sha256:0a1e99116e45c310beb84e625e71bfa3ae45494905dfeadd55fd000bed710fe4"},
+    {file = "holidays-0.20.tar.gz", hash = "sha256:40befaf8823656900d0b6e5643e589193dbaf3ddb005d9347ba7fef94cce1b0a"},
+>>>>>>> decfa65 (env/ poetry add openpyxl)
 ]
 
 [package.dependencies]
@@ -1821,8 +1858,33 @@ traitlets = ">=5.6.0"
 websocket-client = ">=1.7"
 
 [package.extras]
+<<<<<<< HEAD
 docs = ["ipykernel", "jinja2", "jupyter-client", "myst-parser", "nbformat", "prometheus-client", "pydata-sphinx-theme", "send2trash", "sphinx-autodoc-typehints", "sphinxcontrib-github-alt", "sphinxcontrib-openapi (>=0.8.0)", "sphinxcontrib-spelling", "sphinxemoji", "tornado", "typing-extensions"]
 test = ["flaky", "ipykernel", "pre-commit", "pytest (>=7.0,<9)", "pytest-console-scripts", "pytest-jupyter[server] (>=0.7)", "pytest-timeout", "requests"]
+=======
+docs = ["docutils (<0.20)", "ipykernel", "jinja2", "jupyter-client", "jupyter-server", "mistune (<1.0.0)", "myst-parser", "nbformat", "prometheus-client", "pydata-sphinx-theme", "send2trash", "sphinx-autodoc-typehints", "sphinxcontrib-github-alt", "sphinxcontrib-openapi", "sphinxcontrib-spelling", "sphinxemoji", "tornado"]
+test = ["ipykernel", "pre-commit", "pytest (>=7.0)", "pytest-console-scripts", "pytest-jupyter[server] (>=0.4)", "pytest-timeout", "requests"]
+
+[[package]]
+name = "jupyter-server-fileid"
+version = "0.8.0"
+description = ""
+category = "main"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "jupyter_server_fileid-0.8.0-py3-none-any.whl", hash = "sha256:6092ef114eddccf6cba69c0f0feb612c2f476f2e9467828809edb854c18806bb"},
+    {file = "jupyter_server_fileid-0.8.0.tar.gz", hash = "sha256:1e0816d0857f490fadea11348570f0cba03f70f315c9842225aecfa45882b6af"},
+]
+
+[package.dependencies]
+jupyter-events = ">=0.5.0"
+jupyter-server = ">=1.15,<3"
+
+[package.extras]
+cli = ["click"]
+test = ["jupyter-server[test] (>=1.15,<3)", "pytest", "pytest-cov"]
+>>>>>>> decfa65 (env/ poetry add openpyxl)
 
 [[package]]
 name = "jupyter-server-terminals"
@@ -3016,6 +3078,21 @@ files = [
     {file = "overrides-7.7.0-py3-none-any.whl", hash = "sha256:c7ed9d062f78b8e4c1a7b70bd8796b35ead4d9f510227ef9c5dc7626c60d7e49"},
     {file = "overrides-7.7.0.tar.gz", hash = "sha256:55158fa3d93b98cc75299b1e67078ad9003ca27945c76162c1c0766d6f91820a"},
 ]
+
+[[package]]
+name = "openpyxl"
+version = "3.1.1"
+description = "A Python library to read/write Excel 2010 xlsx/xlsm files"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+files = [
+    {file = "openpyxl-3.1.1-py2.py3-none-any.whl", hash = "sha256:a0266e033e65f33ee697254b66116a5793c15fc92daf64711080000df4cfe0a8"},
+    {file = "openpyxl-3.1.1.tar.gz", hash = "sha256:f06d44e2c973781068bce5ecf860a09bcdb1c7f5ce1facd5e9aa82c92c93ae72"},
+]
+
+[package.dependencies]
+et-xmlfile = "*"
 
 [[package]]
 name = "packaging"
@@ -5539,11 +5616,16 @@ type-image-path = ["Pillow", "imagehash"]
 
 [[package]]
 name = "watchdog"
+<<<<<<< HEAD
 version = "5.0.2"
+=======
+version = "2.3.0"
+>>>>>>> decfa65 (env/ poetry add openpyxl)
 description = "Filesystem events monitoring"
 optional = false
 python-versions = ">=3.9"
 files = [
+<<<<<<< HEAD
     {file = "watchdog-5.0.2-cp310-cp310-macosx_10_9_universal2.whl", hash = "sha256:d961f4123bb3c447d9fcdcb67e1530c366f10ab3a0c7d1c0c9943050936d4877"},
     {file = "watchdog-5.0.2-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:72990192cb63872c47d5e5fefe230a401b87fd59d257ee577d61c9e5564c62e5"},
     {file = "watchdog-5.0.2-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:6bec703ad90b35a848e05e1b40bf0050da7ca28ead7ac4be724ae5ac2653a1a0"},
@@ -5574,6 +5656,36 @@ files = [
     {file = "watchdog-5.0.2-py3-none-win_amd64.whl", hash = "sha256:d010be060c996db725fbce7e3ef14687cdcc76f4ca0e4339a68cc4532c382a73"},
     {file = "watchdog-5.0.2-py3-none-win_ia64.whl", hash = "sha256:3960136b2b619510569b90f0cd96408591d6c251a75c97690f4553ca88889769"},
     {file = "watchdog-5.0.2.tar.gz", hash = "sha256:dcebf7e475001d2cdeb020be630dc5b687e9acdd60d16fea6bb4508e7b94cf76"},
+=======
+    {file = "watchdog-2.3.0-cp310-cp310-macosx_10_9_universal2.whl", hash = "sha256:c1b3962e5463a848ba2a342cb66c80251dca27a102933b8f38d231d2a9e5a543"},
+    {file = "watchdog-2.3.0-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:9e651b4874477c1bf239417d43818bbfd047aaf641b029fa60d6f5109ede0db0"},
+    {file = "watchdog-2.3.0-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:d04662017efd00a014cff9068708e085d67f2fac43f48bbbb95a7f97490487f3"},
+    {file = "watchdog-2.3.0-cp311-cp311-macosx_10_9_universal2.whl", hash = "sha256:0f7d759299ce21a3d2a77e18d430c24811369c3432453701790acc6ff45a7101"},
+    {file = "watchdog-2.3.0-cp311-cp311-macosx_10_9_x86_64.whl", hash = "sha256:a4b9bece40d46bf6fb8621817ea7d903eae2b9b3ebac55a51ed50354a79061a8"},
+    {file = "watchdog-2.3.0-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:242e57253e84a736e6777ba756c48cf6a68d3d90cb9e01bd6bfd371a949ace3a"},
+    {file = "watchdog-2.3.0-cp36-cp36m-macosx_10_9_x86_64.whl", hash = "sha256:3fa74b0ef4825f9112932675a002296cb2d3d3e400d7a44c32fafd1ecc83ada0"},
+    {file = "watchdog-2.3.0-cp37-cp37m-macosx_10_9_x86_64.whl", hash = "sha256:15bf5b165d7a6b48265411dad74fb0d33053f8270eb6575faad0e016035cf9f7"},
+    {file = "watchdog-2.3.0-cp38-cp38-macosx_10_9_universal2.whl", hash = "sha256:139262f678b4e6a7013261c772059bca358441de04fb0e0087489a34db9e3db0"},
+    {file = "watchdog-2.3.0-cp38-cp38-macosx_10_9_x86_64.whl", hash = "sha256:8a214955769d2ef0f7aaa82f31863e3bdf6b083ce1b5f1c2e85cab0f66fba024"},
+    {file = "watchdog-2.3.0-cp38-cp38-macosx_11_0_arm64.whl", hash = "sha256:4e648df44a4c6ea6da4d9eb6722745c986b9d70268f25ae60f140082d7c8908e"},
+    {file = "watchdog-2.3.0-cp39-cp39-macosx_10_9_universal2.whl", hash = "sha256:473164a2de473f708ca194a992466eeefff73b58273bbb88e089c5a5a98fcda1"},
+    {file = "watchdog-2.3.0-cp39-cp39-macosx_10_9_x86_64.whl", hash = "sha256:ebe756f788cb130fdc5c150ea8a4fda39cb4ee3a5873a345607c8b84fecf018b"},
+    {file = "watchdog-2.3.0-cp39-cp39-macosx_11_0_arm64.whl", hash = "sha256:a623de186477e9e05f8461087f856412eae5cd005cc4bcb232ed5c6f9a8709f5"},
+    {file = "watchdog-2.3.0-pp37-pypy37_pp73-macosx_10_9_x86_64.whl", hash = "sha256:43d76d7888b26850b908208bb82383a193e8b0f25d0abaa84452f191b4acdea4"},
+    {file = "watchdog-2.3.0-pp38-pypy38_pp73-macosx_10_9_x86_64.whl", hash = "sha256:5ddbbe87f9ed726940d174076da030cd01ec45433ef2b1b2e6094c84f2af17f1"},
+    {file = "watchdog-2.3.0-pp39-pypy39_pp73-macosx_10_9_x86_64.whl", hash = "sha256:3fa1572f5a2f6d17d4d860edbc04488fef31b007c25c2f3b11203fb8179b7c67"},
+    {file = "watchdog-2.3.0-py3-none-manylinux2014_aarch64.whl", hash = "sha256:1d9c656495172873bf1ddc7e39e80055fcdd21c4608cf68f23a28116dcba0b43"},
+    {file = "watchdog-2.3.0-py3-none-manylinux2014_armv7l.whl", hash = "sha256:00f93782c67042d9525ec51628330b5faf5fb84bcb7ebaac05ea8528cfb20bba"},
+    {file = "watchdog-2.3.0-py3-none-manylinux2014_i686.whl", hash = "sha256:f1a655f4a49f9232311b9967f42cc2eaf43fd4903f3bed850dd4570fda5d5eff"},
+    {file = "watchdog-2.3.0-py3-none-manylinux2014_ppc64.whl", hash = "sha256:aa4773160b9cb21ba369cb42d59a947087330b3a02480173033a6a6cc137a510"},
+    {file = "watchdog-2.3.0-py3-none-manylinux2014_ppc64le.whl", hash = "sha256:982f5416a2817003172994d865285dd6a2b3836f033cd3fa87d1a62096a162cc"},
+    {file = "watchdog-2.3.0-py3-none-manylinux2014_s390x.whl", hash = "sha256:45c13e7e6eea1013da419bf9aa9a8f5df7bbf3e5edce40bc6df84130febf39d5"},
+    {file = "watchdog-2.3.0-py3-none-manylinux2014_x86_64.whl", hash = "sha256:7767a3da3307d9cf597832f692702441a97c259e5d0d560f2e57c43ad0d191d2"},
+    {file = "watchdog-2.3.0-py3-none-win32.whl", hash = "sha256:8863913ea2c3f256d18c33d84546518636e391cd8f50d209b9a31221e0f7d3fd"},
+    {file = "watchdog-2.3.0-py3-none-win_amd64.whl", hash = "sha256:6d79b5954db8f41d6a7f5763042b988f7a4afd40b7d141456061fa7c5b7f2159"},
+    {file = "watchdog-2.3.0-py3-none-win_ia64.whl", hash = "sha256:a3559ee82a10976de1ec544b6ebe3b4aa398d491860a283d80ec0f550076d068"},
+    {file = "watchdog-2.3.0.tar.gz", hash = "sha256:9d39effe6909be898ba3e7286a9e9b17a6a9f734fb1ef9dde3e9bb68715fca39"},
+>>>>>>> decfa65 (env/ poetry add openpyxl)
 ]
 
 [package.extras]
