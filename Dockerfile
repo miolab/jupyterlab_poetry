@@ -6,6 +6,8 @@ ENV PYTHONPATH=./
 COPY .kaggle/ ~/.kaggle/
 COPY settings/ ../usr/local/share/jupyter/lab/settings/
 
+RUN apt-get update && apt-get install -y libgomp1
+
 WORKDIR /app
 COPY pyproject.toml ./
 COPY poetry.lock ./
