@@ -30,6 +30,9 @@ kaggle = "^1.5.13"
 ydata-profiling = "^4.1.1"
 ipywidgets = "^8.0.5"
 lightgbm = "^3.3.5"
+torch = "^2.0.0"
+torchvision = "^0.15.1"
+torchaudio = "^2.0.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.4"
