@@ -1,0 +1,20 @@
+name: 'Build Docker image and Python Tests'
+
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Build Docker image
+        run: docker compose build
+
+      - name: Docker Compose up
+        run: docker-compose up -d
+
+      - name: Finish message
+        run: echo "finish build."
