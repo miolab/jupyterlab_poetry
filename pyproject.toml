@@ -2,8 +2,8 @@
 name = "jupyterlab_docker"
 version = "0.4.2"
 description = "Environment JupyterLab Poetry docker-compose"
-
 authors = ["imaima"]
+readme = "README.md"
 
 [tool.poetry.dependencies]
 python = ">=3.8,<3.11"
