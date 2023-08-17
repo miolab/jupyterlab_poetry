@@ -1,8 +1,6 @@
 # JupyterLab in Poetry with Docker
 
-[![miolab](https://circleci.com/gh/miolab/jupyterlab_poetry.svg?style=svg)](https://github.com/miolab/jupyterlab_poetry)
-
-**JupyterLab** runtime environment with **Poetry** and **Docker** management.
+Set up a **JupyterLab** runtime environment managed by **Poetry** within **Docker**.
 
 <img width="800" alt="jupyterlab_poetry_sample_image" src="img/sample_img_0.png">
 
@@ -10,31 +8,7 @@
 
 ---
 
-## :star: Installation
-
-__This repo is intended to work in a Mac__ environment. (M1, Intel)
-
-```
-$ git clone https://github.com/miolab/jupyterlab_poetry.git
-```
-
-```
-$ cd jupyterlab_poetry
-```
-
-```
-$ docker compose build
-    .
-    .
-
-$ docker compose up
-    .
-    .
-```
-
-After done the above, we can run JupyterLab at http://localhost:8890/lab .
-
-### Information
+## Version Information
 
 - Python & Poetry
 
@@ -46,16 +20,45 @@ After done the above, we can run JupyterLab at http://localhost:8890/lab .
   Poetry (version 1.3.2)
   ```
 
-- Packaging libraries
+- Included libraries
 
-  See **pyproject.toml** for details.
+  Refer to **pyproject.toml** for details.
 
-## :star: Add more packages
+## Prerequisites
 
-### add package
+- Docker and Docker Compose installed.
+- This repository is primarily intended for a __Mac__ environment (both M1 and Intel architectures).
+
+## :star: Installation and Usage
+
+
+- Clone the repository:
+  ```sh
+  git clone https://github.com/miolab/jupyterlab_poetry.git
+  ```
+
+- Build and start Docker containers:
+  ```sh
+  cd jupyterlab_poetry
+  ```
+
+  ```sh
+  docker compose build
+  ```
+
+  ```sh
+  docker compose up
+  ```
+
+- Open JupyterLab in your browser:
+  - http://localhost:8890/lab
+
+## :star: Adding & Updating Packages
+
+### Add packages
 
 ```
-➜  docker compose run eda poetry add pyclustering
+docker compose run eda poetry add pyclustering
 ```
 
 - When also specifying a version:
@@ -64,53 +67,50 @@ After done the above, we can run JupyterLab at http://localhost:8890/lab .
   docker compose run eda poetry add pyclustering@^0.10
   ```
 
-### confirm dependencies before update
+### Preview Updates
 
 ```
-➜  docker compose run eda poetry update --dry-run
+docker compose run eda poetry update --dry-run
 ```
 
 ### Update packages
 
 ```
-➜  docker compose run eda poetry update
+docker compose run eda poetry update
 ```
+
+- After updating, rebuild and restart the containers:
+
+  ```
+  docker compose build
+  docker compose up
+  ```
 
 - An example procedure is described here.
 
   - https://github.com/miolab/jupyterlab_poetry/issues/22
 
-And, need to reconstruct and Restart containers.
+---
 
-```
-➜  docker compose build
+## Additional information
 
-➜  docker compose up
-```
-
-## :star: Other information
-
-### Note
+### Notes
 
 - Poetry is used for package management purposes, and the virtual environment `venv` is avoided.
 
   `poetry config virtualenvs.create false`
 
-### :moon: Uninstallation
+### Uninstallation
 
 To delete environment at once and erase directories, execute the following command.
 
 ```
-$ docker compose down --rmi all --volumes
-
-$ cd ../
-
-$ rm -rf jupyterlab_poetry
+docker compose down --rmi all --volumes
+cd ../
+rm -rf jupyterlab_poetry
 ```
 
----
-
-### :moon: Ref
+### References
 
 - Poetry
 
