@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "jupyterlab_docker"
-version = "0.4.2"
+version = "0.4.3"
 description = "Environment JupyterLab Poetry docker-compose"
 authors = ["imaima"]
 readme = "README.md"
@@ -8,6 +8,8 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = ">=3.8,<3.11"
 
+llvmlite = "0.31.0"
+numpy = "~1.23.0"
 jupyterlab = "^3.5"
 pandas = "^1.5"
 scikit-learn = "^1.2"
@@ -18,10 +20,8 @@ japanize-matplotlib = "^1.1"
 sympy = "^1.11"
 scipy = "^1.9"
 pandas-datareader = "~0.10"
-numpy = "~1.23.0"
 xgboost = "^1.7.3"
 mlxtend = "^0.21.0"
-llvmlite = "0.31.0"
 shap = "^0.41.0"
 ephem = "^4.1.4"
 pystan = "^3.6.0"
