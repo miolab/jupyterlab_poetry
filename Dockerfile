@@ -3,7 +3,8 @@ FROM --platform=linux/x86_64 python:3.8.16-slim
 ENV PYTHONUNBUFFERED=1
 ENV PYTHONPATH=./
 
-ENV POETRY_REQUESTS_TIMEOUT=600
+ENV PIP_DEFAULT_TIMEOUT=3600
+ENV POETRY_REQUESTS_TIMEOUT=3600
 
 COPY .kaggle/ ~/.kaggle/
 COPY settings/ ../usr/local/share/jupyter/lab/settings/
