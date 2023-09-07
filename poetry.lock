@@ -1306,19 +1306,6 @@ files = [
 arrow = ">=0.15.0"
 
 [[package]]
-name = "japanize-matplotlib"
-version = "1.1.3"
-description = "matplotlibのフォント設定を自動で日本語化する"
-optional = false
-python-versions = "*"
-files = [
-    {file = "japanize-matplotlib-1.1.3.tar.gz", hash = "sha256:e89e7d9e109820962650e59a130403b59b33915fde3871a265a5891d9bf5e079"},
-]
-
-[package.dependencies]
-matplotlib = "*"
-
-[[package]]
 name = "jedi"
 version = "0.18.2"
 description = "An autocompletion tool for Python that can be used for text editors."
@@ -4740,4 +4727,4 @@ testing = ["big-O", "flake8 (<5)", "jaraco.functools", "jaraco.itertools", "more
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.8,<3.11"
-content-hash = "570fc55d4677ebfb16d6e523e0b162f3890b04ce9d779ec1f80a89681449fb01"
+content-hash = "81d250359727d1fa0c7db81abfb27ac61639983d5fd485bc4808b931dbd021f2"
