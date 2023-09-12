@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "jupyterlab_docker"
-version = "0.5.1"
+version = "0.5.2"
 description = "Environment JupyterLab Poetry docker-compose"
 authors = ["imaima"]
 readme = "README.md"
@@ -30,6 +30,9 @@ ydata-profiling = "^4.1.1"
 ipywidgets = "^8.0.5"
 lightgbm = "^3.3.5"
 nltk = "^3.8.1"
+transformers = "^4.33.1"
+sentencepiece = "^0.1.99"
+accelerate = "^0.20.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.4"
