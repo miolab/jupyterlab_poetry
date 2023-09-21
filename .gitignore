@@ -133,3 +133,4 @@ dmypy.json
 .DS_Store
 
 src/ml_samples/nlp_disaster_tweets/v3_training_results/
+src/ml_samples/nlp_question_pairs/raw_data/*.csv
