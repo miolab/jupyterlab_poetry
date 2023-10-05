@@ -134,3 +134,5 @@ dmypy.json
 
 src/ml_samples/nlp_disaster_tweets/v3_training_results/
 src/ml_samples/nlp_question_pairs/raw_data/*.csv
+src/ml_samples/nlp_sentiment_analysis/raw_data/*.csv
+src/ml_samples/nlp_sentiment_analysis/raw_data/*.tsv
