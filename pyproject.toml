@@ -36,6 +36,7 @@ nltk = "^3.8.1"
 transformers = "^4.33.1"
 sentencepiece = "^0.1.99"
 accelerate = "^0.20.1"
+contractions = "^0.1.73"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.4"
