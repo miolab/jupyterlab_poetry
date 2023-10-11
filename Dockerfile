@@ -22,5 +22,5 @@ COPY poetry.lock ./
 RUN poetry config virtualenvs.create false
 RUN poetry add numpy@1.23.5
 RUN poetry source add --priority=explicit pytorch-cpu-src https://download.pytorch.org/whl/cpu
-RUN poetry add --source pytorch-cpu-src torch@2.1.0 torchvision@0.16.0+cpu torchaudio@2.1.0+cpu
+RUN poetry add --source pytorch-cpu-src torch@2.1.0+cpu torchvision@0.16.0+cpu torchaudio@2.1.0+cpu
 RUN poetry install --no-interaction
