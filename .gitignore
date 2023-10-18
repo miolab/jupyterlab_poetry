@@ -138,3 +138,4 @@ src/ml_samples/nlp_sentiment_analysis/raw_data/*.csv
 src/ml_samples/nlp_sentiment_analysis/raw_data/*.tsv
 src/ml_samples/nlp_sentiment_analysis_on_movie_reviews/raw_data/*.csv
 src/ml_samples/nlp_sentiment_analysis_on_movie_reviews/raw_data/*.tsv
+src/ml_samples/nlp_sentiment_analysis_on_movie_reviews/models/*.joblib
