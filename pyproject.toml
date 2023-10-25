@@ -1,14 +1,14 @@
 [tool.poetry]
 name = "jupyterlab_docker"
-version = "0.5.2"
+version = "0.6.0"
 description = "Environment JupyterLab Poetry docker-compose"
 authors = ["imaima"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = ">=3.8,<3.11"
+python = ">=3.10,<3.11"
 
-llvmlite = "0.31.0"
+llvmlite = "~0.40.1"
 numpy = "1.23.5"
 torch = "2.1.0"
 torchvision = "0.16.0"
