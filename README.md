@@ -14,7 +14,7 @@ Set up a **JupyterLab** runtime environment managed by **Poetry** within **Docke
 
   ```
   ➜ docker compose run eda python --version
-  Python 3.8.18
+  Python 3.10.13
 
   ➜ docker compose run eda poetry --version
   Poetry (version 1.6.1)
