@@ -33,9 +33,9 @@ ydata-profiling = "^4.9.0"
 ipywidgets = "^8.0.5"
 lightgbm = "^3.3.5"
 nltk = "^3.8.1"
-transformers = "^4.33.1"
+transformers = "^4.43.3"
 sentencepiece = "^0.1.99"
-accelerate = "^0.20.1"
+accelerate = "^0.33.0"
 contractions = "^0.1.73"
 
 [tool.poetry.dev-dependencies]
