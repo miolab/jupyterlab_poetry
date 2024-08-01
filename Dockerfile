@@ -17,7 +17,7 @@ ENV LLVM_CONFIG="/usr/bin/llvm-config"
 WORKDIR /app
 
 RUN pip install --upgrade pip
-RUN pip install poetry==1.6.1
+RUN pip install poetry==1.8.3
 
 COPY pyproject.toml ./
 COPY poetry.lock ./
