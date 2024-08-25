@@ -17,7 +17,7 @@ Set up a **JupyterLab** runtime environment managed by **Poetry** within **Docke
   Python 3.11.6
 
   ➜ docker compose run eda poetry --version
-  Poetry (version 1.6.1)
+  Poetry (version 1.8.3)
   ```
 
 - Included libraries
@@ -31,13 +31,14 @@ Set up a **JupyterLab** runtime environment managed by **Poetry** within **Docke
 
 ## :star: Installation and Usage
 
-
 - Clone the repository:
+
   ```sh
   git clone https://github.com/miolab/jupyterlab_poetry.git
   ```
 
 - Build and start Docker containers:
+
   ```sh
   cd jupyterlab_poetry
   ```
