@@ -14,7 +14,7 @@ Set up a **JupyterLab** runtime environment managed by **Poetry** within **Docke
 
   ```
   ➜ docker compose run eda python --version
-  Python 3.11.6
+  Python 3.11.9
 
   ➜ docker compose run eda poetry --version
   Poetry (version 1.8.3)
@@ -27,7 +27,7 @@ Set up a **JupyterLab** runtime environment managed by **Poetry** within **Docke
 ## Prerequisites
 
 - Docker and Docker Compose installed.
-- This repository is primarily intended for a __Mac__ environment (both M1 and Intel architectures).
+- This repository is primarily intended for a **Mac** (M1) environment.
 
 ## :star: Installation and Usage
 

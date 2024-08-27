@@ -1,4 +1,4 @@
-FROM --platform=linux/x86_64 python:3.11.6-slim
+FROM --platform=linux/x86_64 python:3.11.9-slim
 
 ENV PYTHONUNBUFFERED=1
 ENV PYTHONPATH=./
@@ -23,7 +23,4 @@ COPY pyproject.toml ./
 COPY poetry.lock ./
 
 RUN poetry config virtualenvs.create false
-RUN poetry add numpy@1.25.2
-RUN poetry source add --priority=explicit pytorch-cpu-src https://download.pytorch.org/whl/cpu
-RUN poetry add --source pytorch-cpu-src torch@2.3.1+cpu torchvision@0.18.1+cpu torchaudio@2.3.1+cpu
 RUN poetry install --no-interaction
