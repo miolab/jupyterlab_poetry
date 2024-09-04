@@ -35,7 +35,7 @@ lightgbm = "^3.3.5"
 nltk = "^3.9.1"
 transformers = "^4.43.3"
 sentencepiece = "^0.2.0"
-accelerate = "^0.33.0"
+accelerate = "^0.34.0"
 contractions = "^0.1.73"
 aiohttp = "^3.10.2"
 
