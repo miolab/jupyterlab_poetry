@@ -1,12 +1,12 @@
 [tool.poetry]
 name = "jupyterlab_docker"
-version = "0.8.1"
+version = "0.8.2"
 description = "Environment JupyterLab Poetry docker-compose"
 authors = ["imaima"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = ">=3.10,<3.12"
+python = ">=3.10,<3.13"
 
 llvmlite = "^0.43.0"
 numpy = "1.26.4"
@@ -34,7 +34,7 @@ ipywidgets = "^8.0.5"
 lightgbm = "^3.3.5"
 nltk = "^3.9.1"
 transformers = "^4.43.3"
-sentencepiece = "^0.1.99"
+sentencepiece = "^0.2.0"
 accelerate = "^0.33.0"
 contractions = "^0.1.73"
 aiohttp = "^3.10.2"
