@@ -8,7 +8,6 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = ">=3.10,<3.13"
 
-# llvmlite = "^0.43.0"
 numpy = "2.0.2"
 torch = "2.3.1"
 torchvision = "0.18.1"
@@ -25,9 +24,11 @@ pandas-datareader = "~0.10"
 xgboost = "^1.7.3"
 mlxtend = "^0.21.0"
 shap = "^0.43.0"
-# ephem = "^4.1.4"
-# pystan = "^3.6.0"
-prophet = "^1.1.2"
+ephem = "^4.1.5"
+pystan = "^3.10.0"
+# FIXME: Using Prophet current version 1.15 causes `np.float` error. ( https://github.com/facebook/prophet/pull/2592 )
+# - Due to `RuntimeError: Error during optimization`.
+prophet = "^1.1.5"
 kaggle = "^1.5.13"
 ydata-profiling = "^4.10.0"
 ipywidgets = "^8.0.5"
@@ -37,7 +38,7 @@ transformers = "^4.43.3"
 sentencepiece = "^0.2.0"
 accelerate = "^0.34.0"
 contractions = "^0.1.73"
-# aiohttp = "^3.10.2"
+aiohttp = "^3.10.5"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3.2"
