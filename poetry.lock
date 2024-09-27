@@ -2553,13 +2553,13 @@ tbb = "==2021.*"
 
 [[package]]
 name = "mlxtend"
-version = "0.21.0"
+version = "0.23.1"
 description = "Machine Learning Library Extensions"
 optional = false
 python-versions = "*"
 files = [
-    {file = "mlxtend-0.21.0-py2.py3-none-any.whl", hash = "sha256:f471b3fdf63a4f97537a2bd1b09a03408969adb8bbca4088d2305073f2bcc3b4"},
-    {file = "mlxtend-0.21.0.tar.gz", hash = "sha256:dbf250806507ee0bc1d7ae9e71abbace8b75e5ce65c5d4574281217efe14e950"},
+    {file = "mlxtend-0.23.1-py3-none-any.whl", hash = "sha256:38cb84f864dfdaa85c1d7e46d374be94d3d0fd0e2662ad278f42ccc4abcc785a"},
+    {file = "mlxtend-0.23.1.tar.gz", hash = "sha256:9f3075e3deac57f4452fee2c1f0befda58a24c1f9c26bed649a2303ca04baa29"},
 ]
 
 [package.dependencies]
@@ -2569,10 +2569,9 @@ numpy = ">=1.16.2"
 pandas = ">=0.24.2"
 scikit-learn = ">=1.0.2"
 scipy = ">=1.2.1"
-setuptools = "*"
 
 [package.extras]
-docs = ["mkdocs"]
+docs = ["mkdocs", "mkdocs-bootswatch", "nbconvert", "python-markdown-math"]
 testing = ["pytest"]
 
 [[package]]
@@ -6108,4 +6107,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.10,<3.13"
-content-hash = "e0df8743d9ef32847d6fec6cdc61e54928d94dcc8f44b81f8c8e9bdb3dd59d99"
+content-hash = "dc60987d64fb9fd141dda9d1263377bd3799a80519edfc17ab2fc43a877867d5"
