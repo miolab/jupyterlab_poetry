@@ -28,7 +28,7 @@ ephem = "^4.1.5"
 pystan = "^3.10.0"
 # FIXME: Using Prophet current version 1.15 causes `np.float` error. ( https://github.com/facebook/prophet/pull/2592 )
 # - Due to `RuntimeError: Error during optimization`.
-prophet = "^1.1.5"
+prophet = "^1.1.6"
 kaggle = "^1.5.13"
 ydata-profiling = "^4.10.0"
 ipywidgets = "^8.0.5"
