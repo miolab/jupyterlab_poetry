@@ -27,7 +27,7 @@ Set up a **JupyterLab** runtime environment managed by **Poetry** within **Docke
 ## Prerequisites
 
 - Docker and Docker Compose installed.
-- This repository is primarily intended for a **Mac** (M1) environment.
+- This repository is primarily intended for **Mac** environments with Apple Silicon.
 
 ## :star: Installation and Usage
 
