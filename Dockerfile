@@ -19,7 +19,7 @@ RUN apt-get update && \
 WORKDIR /app
 
 # Install pip and poetry
-RUN pip install --upgrade pip poetry==1.8.3
+RUN pip install --upgrade pip poetry==2.1.2
 
 COPY pyproject.toml ./
 COPY poetry.lock ./
