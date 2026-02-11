@@ -17,7 +17,7 @@ Set up a **JupyterLab** runtime environment managed by **Poetry** within **Docke
   Python 3.12.10
 
   ➜ docker compose run eda poetry --version
-  Poetry (version 2.1.2)
+  Poetry (version 2.3.2)
   ```
 
 - Included libraries
@@ -88,7 +88,6 @@ docker compose run eda poetry update
   ```
 
 - An example procedure is described here.
-
   - https://github.com/miolab/jupyterlab_poetry/issues/22
 
 ---
@@ -114,9 +113,7 @@ rm -rf jupyterlab_poetry
 ### References
 
 - Poetry
-
   - [Official](https://python-poetry.org/)
-
     - [The pyproject.toml file](https://python-poetry.org/docs/pyproject/)
 
   - [PyPI](https://pypi.org/project/poetry/)
