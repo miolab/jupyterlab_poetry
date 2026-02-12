@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "jupyterlab_docker"
-version = "0.11.2"
+version = "0.12.0"
 description = "Environment JupyterLab Poetry docker-compose"
 authors = ["imaima"]
 readme = "README.md"
@@ -47,5 +47,5 @@ pytest = "^8.3.2"
 pytest-watch = "^4.2.0"
 
 [build-system]
-requires = ["poetry_core>=2.1.2"]
+requires = ["poetry_core>=2.3.2"]
 build-backend = "poetry.core.masonry.api"
