@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "jupyterlab_docker"
-version = "0.12.0"
+version = "0.12.1"
 description = "Environment JupyterLab Poetry docker-compose"
 authors = ["imaima"]
 readme = "README.md"
@@ -25,9 +25,7 @@ mlxtend = "^0.23.1"
 shap = "^0.43.0"
 ephem = "^4.1.5"
 pystan = "^3.10.0"
-# FIXME: Using Prophet current version 1.15 causes `np.float` error. ( https://github.com/facebook/prophet/pull/2592 )
-# - Due to `RuntimeError: Error during optimization`.
-prophet = "^1.1.5"
+prophet = "^1.3.0"
 kaggle = "^1.5.13"
 ydata-profiling = "^4.10.0"
 ipywidgets = "^8.0.5"
